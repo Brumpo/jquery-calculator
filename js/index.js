@@ -37,6 +37,7 @@ var updatescreen= function(){
     operationstring=operationarray.join("");
     if(error){
     screentext.innerHTML = 'ERROR';
+    error=false;
     }else{
     screentext.innerHTML = eval(operationstring) || 0;
   }
